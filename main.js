@@ -1,7 +1,7 @@
 
 let img = document.querySelector("#img")
 let upload = document.getElementById("upload")
-
+let blurr = document.getElementById("blur"); 
 
 upload.onchange = function(){
     let file =  new FileReader();
@@ -12,11 +12,17 @@ upload.onchange = function(){
     }
 }
 
- 
+ let inputs = document.querySelectorAll(".Edite input")
 
+inputs.forEach( (item)=>{
+    item.addEventListener("input",function(){
+        img.style.filter=`
+        blur(${blurr.value}px)
+        
+      `
+    })
 
-
-
+} )
 
 
 
