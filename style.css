@@ -3,3 +3,51 @@ body{
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+*{
+    box-sizing: border-box;
+}
+
+.continer{
+    display:flex;
+    justify-content: space-evenly;
+    background: #1717179f;
+    height:100em;
+  width: 100%;
+}
+.imagin{
+    max-width: 50%;
+    max-height: 55vh;
+  margin: 100px 0;
+ background: white
+}
+img{
+   width: 100%;
+   height: 55vh;
+}
+.Edite{
+    display: flex;
+    flex-direction: column;
+  color :white;
+  width: 30%;
+  margin: 100px 0;
+  position: relative;
+}
+.Edite div{
+    display: flex;
+    flex-direction: column;
+}
+.Edite div input{
+    margin: 16px 0;
+    color: green;
+}
+#upload{
+    display: non;
+}
+.upload label{
+    padding: 15px 30px;
+    background-color: green;
+    border:0;
+ position: absolute;
+ bottom: 20%;   
+ left: 66%;
+}
